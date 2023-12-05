@@ -43,7 +43,7 @@
                     </div>
                     <div class="prd-info-crt">
                         <a href="" class="check-out">CHECK OUT</a>
-                        <a href="" class="add-crt">ADD TO CART</a>
+                        <button class="shop-item-button" onclick="addCrt2()">Add to Cart</button>
                         <div class="quantity-edit">
                             <button id="decrement">-</button>
                             <span id="quantity">1</span>
@@ -56,6 +56,40 @@
             </div>
         </div>
     </div>
-    <script src="script/product.js"></script>
+    <div class="prd-img-1" style="display: none;"><img src="images/Untitled design (18).png" alt=""></div>
+    <script>
+        function addCrt2() {
+          var itemName = document.querySelector('.prd-name h3').innerText;
+          var itemPrice = document.querySelector('.prd-price h4').innerText;
+          var itemImgSrc = document.querySelector('.prd-img-1 img').src;
+          
+          var itemData2 = {
+              name: itemName,
+              price: itemPrice,
+              imgSrc: itemImgSrc
+          };
+        
+          localStorage.setItem('itemData2', JSON.stringify(itemData2));
+  
+          var itemHTML2 = `
+          <div class="prd-cart prd-1">
+              <div class="cart-no"></div>
+              <div class="cart-img">
+                  <div class="cart-img-dis"><img src="${itemData2.imgSrc}" alt=""></div>
+              </div>
+              <div class="cart-name">${itemData2.name}</div>
+              <div class="cart-quantity"></div>
+              <div class="cart-price">${itemData2.price}</div>
+              <div class="cart-delete">
+                  <input type="checkbox" name="" id="prd-1" class="checkbox">
+                  <label for="prd-1"><i class="fas fa-times"></i></label>
+              </div>
+          </div>
+          `;
+          
+          localStorage.setItem('itemHTML2', itemHTML2);
+                     
+        }
+     </script>
 </body>
 </html>
