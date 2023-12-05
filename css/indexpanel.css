@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+
+    background-color: rgba(29, 29, 29, 0.993);
+    height: 80px;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    position: fixed;
+    z-index: 99;
+  }
+  
+  label.logo{
+    line-height: 120px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0px 100px;
+  }
+
+  label a img{
+    height: 50px;
+    width: 50px;
+  }
+
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+  }
+  
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 7px 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  nav a::after{
+  content: '';
+   background-color: rgb(255, 255, 255);
+   height: 5px;
+   width: 0 ;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   transition: 0.3s all ease-in;
+  
+  
+  
+  }
+  
+  nav a:hover::after{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  
+  }
+  
+  .una{
+    display: none;
+  }
+  
+  .acv::after{
+  display: none;
+  }
+  
+  .acv{
+  background-color: white;
+  border-radius: 50%;
+  padding: 13px 15px;
+  color: black;
+  transition: all 0.1s ease-in;
+  }
+  
+  a:hover{
+    background-color: rgb(48, 48, 48);
+    color: white;
+  }
+  
+  .checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check{
+    display: none;
+  }
+
+.checkbtn{
+    display: block;
+    margin: 27px;
+    line-height: 30px;
+    color: white;
+  }
+  
+  
+  .una{
+    display: block;
+  }
+  
+  .acv{
+    display: none;
+  }
+  
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(17, 17, 17);
+    top: 80px;
+    left: -200%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  nav ul li{
+    display: block;
+  }
+  
+  nav ul li a {
+    font-size: 40px;
+    
+  }
+  
+  a:hover,a.active{
+    background: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  #check:checked ~ ul{
+    left: 0;
+  }
+  
+  #bars {
+    
+    display: block;
+    transition: all 0.3s ease-in;
+  }
+  
+  .cart{
+  
+  display: block;
+  
+  }
+  
+  #xmark {
+    display: none;
+  
+  }
+  
+  #check:checked ~ .checkbtn #bars {
+    display: none;
+    
+  }
+  
+  #check:checked ~ .checkbtn #xmark {
+    display: block;
+    transition: all 0.3s ease-in;
+    
+  }
+  
+  .shope-btn::after{
+    display: none;
+  }
+   
+  .shop-divbtn{
+    display: block;
+  }
+
+  header{
+    padding-top: 15vh;
+    
+    width: 100%;
+    background-color: orange;
+
+  }
+  
+  header h4{
+    padding-left: 30px;
+    font-size: 3vw;
+    color: white;
+  }
+  

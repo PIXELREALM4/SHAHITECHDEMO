@@ -1,0 +1,12 @@
+.products{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(82, 82, 82);
+}
+
+.products ul {
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.562);
+}

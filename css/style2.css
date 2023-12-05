@@ -1,0 +1,671 @@
+.shope h4{
+    font-size: 6vw;
+    padding: 20px 60px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav img{
+    height:  70px ;
+    width:  70px;
+    transition: all 0.2s ease;
+}
+
+nav label a img:hover{
+   transform: scale(1.1);
+   background-color: transparent;
+}
+
+nav label a::after{
+    display: none;
+}
+nav label a:hover{
+    background-color: transparent;
+}
+
+
+
+.container{
+   position: relative;
+    display: grid;
+    padding: 80px 10%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 6rem;
+}
+.container a{
+    text-decoration: none;
+}
+.item{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.404);
+    border: 1px rgba(255, 255, 255, 0.644) solid;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+
+.int h4{
+    height: 50%;
+    width: 100%;
+    
+}
+.int .revstr{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to top right, #9a17e6, #f08ecf);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 40px;
+    text-decoration: none;
+}
+
+.hrticon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.815);
+    text-decoration: none;
+    
+    
+    
+}
+#fulhrt{
+    display: none;
+}
+
+
+.revstr{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.822);
+}
+
+
+
+
+  /* this is the code for 1 prdcard----------------> */
+
+.item1 .contimg-1{
+    height: 70%;
+    width: 100%;
+    
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+
+.contimg-1 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.item1 .infocont-1{
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+.item1 .infocont-1 .int{
+    width: 70%;
+    height: 100%;
+    
+}
+
+
+
+.item1 .infocont-1 .hrticon{
+    
+    width: 30%;
+    height: 100%;
+    
+    border-bottom-right-radius: 20px;
+}
+
+.item1:hover{
+    transform: scale(1.1);
+}
+
+#checkbox1{
+    display: none;
+}
+
+
+#checkbox1:checked ~ .checkbox1 #holohrt{
+    display: none;
+}
+
+#checkbox1:checked ~ .checkbox1 #fulhrt{
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+
+/* for 2nd ------------------> */
+
+
+.item2:hover{
+    transform: scale(1.1);
+}
+
+.item2 .contimg-2{
+    height: 70%;
+    width: 100%;
+    
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.contimg-2 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.item2 .infocont-2{
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+.item2 .infocont-2 .int{
+    width: 70%;
+    height: 100%;
+  
+}
+
+.item2 .infocont-2 .hrticon{
+    
+    width: 30%;
+    height: 100%;
+    
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox2{
+    display: none;
+}
+
+
+#checkbox2:checked ~ .checkbox2 #holohrt{
+    display: none;
+}
+
+#checkbox2:checked ~ .checkbox2 #fulhrt{
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+
+/* for 3rd ----------------------------> */
+
+
+.item3:hover{
+    transform: scale(1.1);
+}
+.item3 .contimg-3{
+    height: 70%;
+    width: 100%;
+    
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item3 .infocont-3{
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+.item3 .infocont-3 .int{
+    width: 70%;
+    height: 100%;
+
+}
+
+.item3 .infocont-3 .hrticon{
+    
+    width: 30%;
+    height: 100%;
+    
+    border-bottom-right-radius: 20px;
+}
+
+
+#checkbox3{
+    display: none;
+}
+
+
+#checkbox3:checked ~ .checkbox3 #holohrt{
+    display: none;
+}
+
+#checkbox3:checked ~ .checkbox3 #fulhrt{
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+/* for 4th ----------------> */
+
+
+.item4:hover{
+    transform: scale(1.1);
+}
+.item4 .contimg-4{
+    height: 70%;
+    width: 100%;
+  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item4 .infocont-4{
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+.item4 .infocont-4 .int{
+    width: 70%;
+    height: 100%;
+ 
+}
+
+.item4 .infocont-4 .hrticon{
+    
+    width: 30%;
+    height: 100%;
+    
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox4{
+    display: none;
+}
+
+
+#checkbox4:checked ~ .checkbox4 #holohrt{
+    display: none;
+}
+
+#checkbox4:checked ~ .checkbox4 #fulhrt{
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+/* for 5th -------------------------> */
+.item5:hover{
+    transform: scale(1.1);
+}
+
+.item5 .contimg-5{
+    height: 70%;
+    width: 100%;
+  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item5 .infocont-5{
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+.item5 .infocont-5 .int{
+    width: 70%;
+    height: 100%;
+
+}
+
+.item5 .infocont-5 .hrticon{
+    
+    width: 30%;
+    height: 100%;
+    
+    border-bottom-right-radius: 20px;
+}
+
+
+#checkbox5{
+    display: none;
+}
+
+
+#checkbox5:checked ~ .checkbox5 #holohrt{
+    display: none;
+}
+
+#checkbox5:checked ~ .checkbox5 #fulhrt{
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+/* for 6th --------------> */
+
+.item6:hover{
+    transform: scale(1.1);
+}
+
+.item6 .contimg-6{
+    height: 70%;
+    width: 100%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item6 .infocont-6{
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+.item6 .infocont-6 .int{
+    width: 70%;
+    height: 100%;
+    
+}
+
+.item6 .infocont-6 .hrticon{
+    
+    width: 30%;
+    height: 100%;
+ 
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox6{
+    display: none;
+}
+
+
+#checkbox6:checked ~ .checkbox6 #holohrt{
+    display: none;
+}
+
+#checkbox6:checked ~ .checkbox6 #fulhrt{
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+/* for 7th  ----------------------> */
+
+.item7:hover {
+    transform: scale(1.1);
+}
+
+.item7 .contimg-7 {
+    height: 70%;
+    width: 100%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item7 .infocont-7 {
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+
+.item7 .infocont-7 .int {
+    width: 70%;
+    height: 100%;
+}
+
+.item7 .infocont-7 .hrticon {
+    width: 30%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox7 {
+    display: none;
+}
+
+#checkbox7:checked ~ .checkbox7 #holohrt {
+    display: none;
+}
+
+#checkbox7:checked ~ .checkbox7 #fulhrt {
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+/* for 8th -----------------------------> */
+
+
+.item8:hover {
+    transform: scale(1.1);
+}
+
+.item8 .contimg-8 {
+    height: 70%;
+    width: 100%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item8 .infocont-8 {
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+
+.item8 .infocont-8 .int {
+    width: 70%;
+    height: 100%;
+}
+
+.item8 .infocont-8 .hrticon {
+    width: 30%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox8 {
+    display: none;
+}
+
+#checkbox8:checked ~ .checkbox8 #holohrt {
+    display: none;
+}
+
+#checkbox8:checked ~ .checkbox8 #fulhrt {
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+
+/* for 9th -----------------------------> */
+
+
+.item9:hover {
+    transform: scale(1.1);
+}
+
+.item9 .contimg-9 {
+    height: 70%;
+    width: 100%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item9 .infocont-9 {
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+
+.item9 .infocont-9 .int {
+    width: 70%;
+    height: 100%;
+}
+
+.item9 .infocont-9 .hrticon {
+    width: 30%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox9 {
+    display: none;
+}
+
+#checkbox9:checked ~ .checkbox9 #holohrt {
+    display: none;
+}
+
+#checkbox9:checked ~ .checkbox9 #fulhrt {
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+/* for 10th ------------------------> */
+
+
+.item10:hover {
+    transform: scale(1.1);
+}
+
+.item10 .contimg-10 {
+    height: 70%;
+    width: 100%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item10 .infocont-10 {
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+
+.item10 .infocont-10 .int {
+    width: 70%;
+    height: 100%;
+}
+
+.item10 .infocont-10 .hrticon {
+    width: 30%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox10 {
+    display: none;
+}
+
+#checkbox10:checked ~ .checkbox10 #holohrt {
+    display: none;
+}
+
+#checkbox10:checked ~ .checkbox10 #fulhrt {
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+/* for 11th ---------------------------> */
+.item11:hover {
+    transform: scale(1.1);
+}
+
+.item11 .contimg-11 {
+    height: 70%;
+    width: 100%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item11 .infocont-11 {
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+
+.item11 .infocont-11 .int {
+    width: 70%;
+    height: 100%;
+}
+
+.item11 .infocont-11 .hrticon {
+    width: 30%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox11 {
+    display: none;
+}
+
+#checkbox11:checked ~ .checkbox11 #holohrt {
+    display: none;
+}
+
+#checkbox11:checked ~ .checkbox11 #fulhrt {
+    display: block;
+    color: rgb(250, 35, 53);
+}
+
+/* for 12th------------------------> */
+.item12:hover {
+    transform: scale(1.1);
+}
+
+.item12 .contimg-12 {
+    height: 70%;
+    width: 100%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.item12 .infocont-12 {
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+}
+
+.item12 .infocont-12 .int {
+    width: 70%;
+    height: 100%;
+}
+
+.item12 .infocont-12 .hrticon {
+    width: 30%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+}
+
+#checkbox12 {
+    display: none;
+}
+
+#checkbox12:checked ~ .checkbox12 #holohrt {
+    display: none;
+}
+
+#checkbox12:checked ~ .checkbox12 #fulhrt {
+    display: block;
+    color: rgb(250, 35, 53);
+}

@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    background-color: rgb(82, 82, 82);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#hid{
+    display: none;
+}
+
+.container{
+    width: 95%;
+    
+    height: 90vh;
+    border-radius: 25px;
+    background-color: white;
+}
+
+
+.bak-btn{
+    width: 100%;
+    height: 8%;
+  
+    font-size: 40px;
+    text-decoration: none;
+    
+    justify-content: center;
+}
+
+.bak-btn a{
+    padding-left: 20px;
+    color: black;
+}
+
+.prd{
+    height: 60%;
+    width: 100%;
+    
+    display: flex;
+}
+
+.prd-img{
+    height: 100%;
+    width: 50%;
+    
+    display: flex;
+}
+
+.prd-info{
+    height: 100%;
+    width: 50%;
+    
+}
+
+.prd-img-multi{
+    height: 100%;
+    width: 15%;
+   
+}
+
+.prd-img-scrn{
+    height: 100%;
+    width: 85%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.prd-img-multi-pht{
+    margin: 15px 0px 15px  10px;
+    height: 21%;
+    width: 85%;
+    
+    
+}
+
+.prd-img-multi-pht img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prd-img-scrn-dis{
+  width: 90%;
+  height: 90%;
+  
+}
+
+.prd-img-multi-pht.active {
+    border-color: #744f4f; /* Add a black border to the active image */
+}
+
+.prd-img-scrn-dis img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prd-name{
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    
+    align-items: center;
+}
+
+.prd-name h3{
+  padding-left: 40px;
+  font-size: 60px;
+}
+
+.prd-info-dis{
+    height: 75%;
+    width: 100%;
+  
+    display: flex;
+
+}
+
+.prd-info-dis-int{
+    width: 50%;
+    height: 150%;
+    
+}
+
+.prd-info-crt{
+    width: 50%;
+    height: 150%;
+
+    
+
+    
+}
+
+.prd-info-crt p{
+    color: #636363;
+}
+.prd-dis h5{
+    padding-top: 20px;
+}
+
+.prd-dis ul{
+    padding: 20px 30px 0px 30px;
+    list-style: none;
+}
+
+.prd-info-crt {
+    text-align: center; /* Center-align the content within the div */
+    position: relative;
+}
+
+.check-out, .add-crt {
+    display: inline-block;
+    background-color: #353535; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 83px; /* Padding to adjust the button size */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    margin: 5px; /* Add margin to separate the buttons */
+    text-decoration: none; 
+    cursor: pointer;/* Remove underline from links */
+}
+
+.shop-item-button{
+    display: inline-block;
+    background-color: #353535; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 96px; /* Padding to adjust the button size */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    margin: 5px; /* Add margin to separate the buttons */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.check-out:hover, .add-crt:hover , .shop-item-button:hover {
+    background-color: #464646; /* Change background color on hover */
+}
+
+.check-out{
+    padding: 10px 90px;
+}
+
+h6{
+  padding-top: 90px;
+}
+
+p{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.prd-price{
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+}
+
+.prd-price h4{
+    font-size: 50px;
+    padding-left: 40px;
+}
+
+
+.prd-img-multi-pht {
+    cursor: pointer;
+   
+    transition: border-color 0.3s;
+}
+
+.prd-img-multi-pht.active {
+    border: 4px solid #c42121; /* Add a black border to the active image */
+}
+
+#decrement{
+    height: 40px;
+    width: 40px;
+    background-color: #464646;
+    color: white;
+}
+
+#quantity{
+    padding: 0px 15px 0px 15px;
+}
+
+#increment{
+    height: 40px;
+    width: 40px;
+    background-color: #464646;
+    color: white;
+}
+
+.quantity-edit{
+    margin-top: 30px;
+}
+
+#decrement, #increment{
+    cursor: pointer;
+}
+#decrement:hover , #increment:hover{
+    background-color: #636363;
+
+}
+

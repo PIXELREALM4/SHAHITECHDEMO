@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="bk-btn"><a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a><a href="" class="check-out">CHECK OUT</a></div>
+    <div class="totl"><h5>Total products:  <span class="total-products"></span> </h5><h5>Total Price:  <span class="total-price"></span></h5></div>
+    <div class="cart-product-dis">
+    <div class="prd-index">No.</div>
+    <div class="prd-name">Product</div>
+    <div class="prd-quantity">Quantity</div>
+    <div class="prd-price">Price</div>
+    </div>
+    <div class="cart" class="cart-items" id="cart">
+
+
+ 
+     
+    </div>
+
+    
+    <script>
+        // Retrieve itemData and itemHTML from local storage
+        var storedItemData = localStorage.getItem('itemData');
+        var storedItemHTML = localStorage.getItem('itemHTML');
+        
+        if (storedItemData && storedItemHTML) {
+            var itemData = JSON.parse(storedItemData);
+    
+            // Set the content of the elements in the second HTML page
+            var cart = document.getElementById('cart');
+            cart.innerHTML = storedItemHTML;
+    
+            
+        }
+    </script>
+</body>
+</html>

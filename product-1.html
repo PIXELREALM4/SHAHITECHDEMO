@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="bak-btn"><a href="javascript:history.back()"><i class="fas fa-arrow-left"></a></i></div>
+        <div class="prd">
+            <div class="prd-img">
+                <div class="prd-img-multi">
+                  <div class="prd-img-multi-pht"  class="active" onclick="changeImage(0)"><img src="images/WA-IMG-20231101-b7767e36.jpg" alt=""></div>
+                  <div class="prd-img-multi-pht" onclick="changeImage(1)"><img src="images/WA-IMG-20231101-16805fcb.jpg" alt=""></div>
+                  <div class="prd-img-multi-pht"  onclick="changeImage(2)"><img src="images/WA-IMG-20231101-0898b0cf.jpg" alt=""></div>
+                  <div class="prd-img-multi-pht"  onclick="changeImage(3)"><img src="images/WA-IMG-20231101-2cbd68e3.jpg" alt=""></div>
+                </div>
+                <div class="prd-img-scrn">
+                 <div class="prd-img-scrn-dis">
+                    <img src="images/WA-IMG-20231101-b7767e36.jpg" alt="">
+                 </div>
+                </div>
+            </div>
+            <div class="prd-info" class="shop-item">
+                <div class="prd-name" class="shop-item-title"><h3>AIRPODS</h3></div>
+                <div class="prd-info-dis">
+                    <div class="prd-info-dis-int">
+                        <div class="prd-price" class="shop-item-price"><h4><span id="price">3000</span> PKR</h4></div>
+                        <div class="prd-dis">
+                        <h5>DESCRIPTION:-</h5>
+                        <ul>
+                            <li>☑️ Premium Quality</li>
+                            <li>☑️Immersive Bass Boosted Sound 🔈</li>
+                            <li>☑️ Working on all Android/iOS Devices Easily</li>
+                            <li>☑️ Spatial Audio</li>
+                            <li>☑️ 4.5 Hours Play Time</li>
+                            <li>☑️ If the Case and Airpods Pro are fully charged then the Battery timing will be UpTo 16 to 24 Hours</li>
+                            <li>☑️ Fast Processor for Immediately Connection</li>
+                            <li>☑️ Pop-Up Window Feature on iPhone</li>
+                            <li>☑️ Look like same as the original Apple AirPods Pro</li>
+                            <li>☑️ Tap Touch Sensors for play/pause/next/previous call etc.</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="prd-info-crt">
+                        <button class="check-out">CHECK OUT</button>
+                        <button class="shop-item-button" onclick="addCrt1()">Add to Cart</button>
+                        <div class="quantity-edit">
+                            <button id="decrement">-</button>
+                            <span id="quantity">1</span>
+                            <button id="increment">+</button>
+                        </div>
+                        <h6>NOTE</h6>
+                        <p>Please be advised that our delivery services are exclusively available within Pakistan. We regret to inform you that we cannot facilitate international shipments at this time. For any delivery-related queries or concerns, please do not hesitate to contact our customer support team. We appreciate your understanding and look forward to serving you within Pakistan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="prd-img-1" style="display: none;"><img src="images/WA-IMG-20231101-b7767e36.jpg" alt=""></div>
+   <script>
+      function addCrt1() {
+        var itemName = document.querySelector('.prd-name h3').innerText;
+        var itemPrice = document.querySelector('.prd-price h4').innerText;
+        var itemImgSrc = document.querySelector('.prd-img-1 img').src;
+        
+        var itemData = {
+            name: itemName,
+            price: itemPrice,
+            imgSrc: itemImgSrc
+        };
+      
+        localStorage.setItem('itemData', JSON.stringify(itemData));
+
+        var itemHTML = `
+        <div class="prd-cart prd-1">
+            <div class="cart-no"></div>
+            <div class="cart-img">
+                <div class="cart-img-dis"><img src="${itemData.imgSrc}" alt=""></div>
+            </div>
+            <div class="cart-name">${itemData.name}</div>
+            <div class="cart-quantity"></div>
+            <div class="cart-price">${itemData.price}</div>
+            <div class="cart-delete">
+                <input type="checkbox" name="" id="prd-1" class="checkbox">
+                <label for="prd-1"><i class="fas fa-times"></i></label>
+            </div>
+        </div>
+        `;
+        
+        localStorage.setItem('itemHTML', itemHTML);
+                   
+      }
+   </script>
+    
+</body>
+</html>
