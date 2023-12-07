@@ -67,19 +67,11 @@ body {
     display: flex;
 }
 
-.prd-index{
-    height: 100%;
-    width: 5%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid rgba(0, 0, 0, 0.342) ;
-}
+
 
 .prd-name{
     height: 100%;
-    width: 40%;
+    width: 45%;
     
     display: flex;
     align-items: center;
@@ -116,15 +108,7 @@ body {
     border-bottom:  1px solid rgba(0, 0, 0, 0.521);
 }
 
-.cart-no{
-    height: 100%;
-    width: 5%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid rgba(0, 0, 0, 0.342) ;
-}
+
 
 .cart-img{
     height: 100%;
@@ -153,7 +137,7 @@ body {
 
 .cart-name{
     height: 100%;
-    width: 32%;
+    width: 37%;
     
     border-right: 1px solid rgba(0, 0, 0, 0.342) ;
 }

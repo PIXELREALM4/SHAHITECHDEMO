@@ -11,7 +11,7 @@
     <div class="bk-btn"><a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a><a href="" class="check-out">CHECK OUT</a></div>
     <div class="totl"><h5>Total products:  <span class="total-products"></span> </h5><h5>Total Price:  <span class="total-price"></span></h5></div>
     <div class="cart-product-dis">
-    <div class="prd-index">No.</div>
+   
     <div class="prd-name">Product</div>
     <div class="prd-quantity">Quantity</div>
     <div class="prd-price">Price</div>
@@ -63,10 +63,22 @@
             var cart = document.getElementById('cart');
             cart.innerHTML += storedItemHTML2;
     
-            
+            function deleteItem2() {
+        // Clear local storage
+        localStorage.removeItem('itemData2');
+        localStorage.removeItem('itemHTML2');
+
+        // Clear the display container
+        var car2 = document.getElementById('cart2');
+        cart2.innerHTML = '';
+
+        location.reload();
+         }   
         }
+ 
+
     </script>
-    <script>
+    <!-- <script>
         // Retrieve itemData and itemHTML from local storage
         var storedItemData3 = localStorage.getItem('itemData3');
         var storedItemHTML3 = localStorage.getItem('itemHTML3');
@@ -80,6 +92,18 @@
     
             
         }
+
+        function deleteItem2() {
+        // Clear local storage
+        localStorage.removeItem('itemData2');
+        localStorage.removeItem('itemHTML2');
+
+        // Clear the display container
+        var cart3 = document.getElementById('cart3');
+        cart3.innerHTML = '';
+
+        location.reload();
+         }
     </script>
     <script>
         // Retrieve itemData and itemHTML from local storage
@@ -95,6 +119,18 @@
     
             
         }
+
+        function deleteItem4() {
+        // Clear local storage
+        localStorage.removeItem('itemData4');
+        localStorage.removeItem('itemHTML4');
+
+        // Clear the display container
+        var cart4 = document.getElementById('cart4');
+        cart4.innerHTML = '';
+
+        location.reload();
+         }
     </script>
     <script>
         // Retrieve itemData and itemHTML from local storage
@@ -110,6 +146,18 @@
     
             
         }
+
+        function deleteItem5() {
+        // Clear local storage
+        localStorage.removeItem('itemData5');
+        localStorage.removeItem('itemHTML5');
+
+        // Clear the display container
+        var cart5 = document.getElementById('cart5');
+        cart5.innerHTML = '';
+
+        location.reload();
+         }
     </script>
     <script>
         // Retrieve itemData and itemHTML from local storage
@@ -125,6 +173,18 @@
     
             
         }
+
+        function deleteItem6() {
+        // Clear local storage
+        localStorage.removeItem('itemData6');
+        localStorage.removeItem('itemHTML6');
+
+        // Clear the display container
+        var cart6 = document.getElementById('cart6');
+        cart6.innerHTML = '';
+
+        location.reload();
+         }
     </script>
     <script>
         // Retrieve itemData and itemHTML from local storage
@@ -140,6 +200,18 @@
     
             
         }
+
+        function deleteItem7() {
+        // Clear local storage
+        localStorage.removeItem('itemData7');
+        localStorage.removeItem('itemHTML7');
+
+        // Clear the display container
+        var cart7 = document.getElementById('cart7');
+        cart7.innerHTML = '';
+
+        location.reload();
+         }
     </script>
     <script>
         // Retrieve itemData and itemHTML from local storage
@@ -155,6 +227,20 @@
     
             
         }
-    </script>
+
+        function deleteItem8() {
+        // Clear local storage
+        localStorage.removeItem('itemData8');
+        localStorage.removeItem('itemHTML8');
+
+        // Clear the display container
+        var cart8 = document.getElementById('cart8');
+        cart8.innerHTML = '';
+
+        location.reload();
+         }
+    </script> -->
+
+    
 </body>
 </html>
