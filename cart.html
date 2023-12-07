@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="bk-btn"><a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a><a href="" class="check-out">CHECK OUT</a></div>
-    <div class="totl"><h5>Total products:  <span class="total-products"></span> </h5><h5>Total Price:  <span class="total-price"></span></h5></div>
+    <div class="totl"><h5>Total Price:  <span class="total-price" id="total-price">0</span></h5></div>
     <div class="cart-product-dis">
    
     <div class="prd-name">Product</div>
@@ -46,6 +46,7 @@
         cart1.innerHTML = '';
 
         location.reload();
+        updateTotalPrice();
     }
     
             
@@ -240,7 +241,64 @@
         location.reload();
          }
     </script> -->
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the input element
+            var quantityInput1 = document.getElementById('quantityInput1');
     
+            // Add event listener to the input element
+            quantityInput1.addEventListener('input', function () {
+                // Ensure the value is always 1 or greater
+                if (quantityInput1.value < 1) {
+                    quantityInput1.value = 1;
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the input element
+            var quantityInput2 = document.getElementById('quantityInput2');
+    
+            // Add event listener to the input element
+            quantityInput2.addEventListener('input', function () {
+                // Ensure the value is always 1 or greater
+                if (quantityInput2.value < 1) {
+                    quantityInput2.value = 1;
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all cart quantity input elements
+            var quantityInputs = document.querySelectorAll('.cart-quantity-input');
+    
+            // Add event listeners to each quantity input
+            quantityInputs.forEach(function (input) {
+                input.addEventListener('input', updateTotalPrice);
+            });
+    
+            // Function to update total price
+            function updateTotalPrice() {
+                var totalPrice = 0;
+    
+                // Iterate through each cart item
+                quantityInputs.forEach(function (input, index) {
+                    var quantity = parseFloat(input.value) || 0;
+                    var price = parseFloat(document.querySelectorAll('.cart-price')[index].innerText) || 0;
+                    totalPrice += quantity * price;
+                });
+    
+                // Update the total price display
+                document.getElementById('total-price').innerText =  totalPrice.toFixed(2);
+            }
+    
+            // Function to delete item (you can replace this with your own logic)
+          
+        });
+    </script>
+  <script src="script/cart2.js"></script>
+
 </body>
 </html>

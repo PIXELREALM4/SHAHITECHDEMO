@@ -48,7 +48,7 @@
                     </div>
                     <div class="prd-info-crt">
                         <button class="check-out">CHECK OUT</button>
-                        <button class="shop-item-button" onclick="addCrt1()">Add to Cart</button>
+                        <button class="shop-item-button" onclick="addCrt1(),addtocrt()" >Add to Cart</button>
                         <div class="quantity-edit">
                             <button id="decrement">-</button>
                             <span id="quantity">1</span>
@@ -83,7 +83,7 @@
                 <div class="cart-img-dis"><img src="${itemData.imgSrc}" alt=""></div>
             </div>
             <div class="cart-name">${itemData.name}</div>
-            <div class="cart-quantity"></div>
+            <div class="cart-quantity"><input class="cart-quantity-input" type="number" value="1" id="quantityInput1"></div>
             <div class="cart-price">${itemData.price}</div>
             <div class="cart-delete">
                 <button onclick="deleteItem1()"><i class="fas fa-times"></i></button>
@@ -95,6 +95,8 @@
                    
       }
    </script>
+
+   <script src="script/cart2.js"></script>
     
 </body>
 </html>

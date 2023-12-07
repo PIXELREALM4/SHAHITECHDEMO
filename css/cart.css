@@ -138,9 +138,15 @@ body {
 .cart-name{
     height: 100%;
     width: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
     border-right: 1px solid rgba(0, 0, 0, 0.342) ;
 }
+
+
 
 .cart-quantity{
     height: 100%;
@@ -180,3 +186,22 @@ body {
 .checkbox{
     display: none;
 } 
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #afaeae;
+    color: #000000;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-delete button{
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+}
