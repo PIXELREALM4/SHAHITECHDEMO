@@ -270,35 +270,51 @@
         });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get all cart quantity input elements
-            var quantityInputs = document.querySelectorAll('.cart-quantity-input');
-    
-            // Add event listeners to each quantity input
-            quantityInputs.forEach(function (input) {
-                input.addEventListener('input', updateTotalPrice);
-            });
-    
-            // Function to update total price
-            function updateTotalPrice() {
-                var totalPrice = 0;
-    
-                // Iterate through each cart item
-                quantityInputs.forEach(function (input, index) {
-                    var quantity = parseFloat(input.value) || 0;
-                    var price = parseFloat(document.querySelectorAll('.cart-price')[index].innerText) || 0;
-                    totalPrice += quantity * price;
-                });
-    
-                // Update the total price display
-                document.getElementById('total-price').innerText =  totalPrice.toFixed(2);
+        // Retrieve itemData from local storage
+        var storedItemData = JSON.parse(localStorage.getItem('itemData'));
+        var storedItemData2 = JSON.parse(localStorage.getItem('itemData2'));
+        // Check if itemData is not null or undefined
+        
+            // Retrieve the price from itemData and store it in the variable price1
+            if (storedItemData) {
+                var price1 = storedItemData.price;
+               price1 = parseFloat(price1);
+               
+               var myInput = document.getElementById('quantityInput1');
+
+// Retrieve the numeric value
+               var numericValue = parseFloat(myInput.value);
+
+ 
+            
+
             }
-    
-            // Function to delete item (you can replace this with your own logic)
-          
-        });
+
+            else{
+                var price1 = 0;
+            }
+
+            if (storedItemData2) {
+                var price2 = storedItemData2.price;
+                price2 = parseFloat(price2);
+            }
+
+            else {
+                var price2 = 0 ;
+            }
+           
+             
+            var total = price1 + price2 ;
+            // Use the price as needed (e.g., display it, perform calculations, etc.)
+            if (total) {
+              document.getElementById('total-price').innerHTML = total;
+              console.log(numericValue);
+            }
+            else{
+                document.getElementById('total-price').innerHTML = 0;
+            }
+
     </script>
-  <script src="script/cart2.js"></script>
 
 </body>
 </html>

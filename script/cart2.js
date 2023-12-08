@@ -23,9 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Update the total price display
         document.getElementById('total-price').innerText =  totalPrice.toFixed(2);
     }
-
-    function addtocrt() {
-        updateTotalPrice(); 
-    }
+     
+    
 });
 
