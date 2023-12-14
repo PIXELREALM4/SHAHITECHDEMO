@@ -1,83 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cart</title>
-    <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-</head>
-<body>
-    <div class="bk-btn"><a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a><a href="" class="check-out">CHECK OUT</a></div>
-    <div class="totl"><h5>Total Price:  <span class="total-price" id="total-price">0</span></h5></div>
+    <link rel="stylesheet" href="css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bk-btn">
+      <a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a
+      ><a href="" class="check-out">CHECK OUT</a>
+    </div>
+    <div class="totl">
+      <h5>Total Price: <span class="total-price" id="total-price">0</span></h5>
+    </div>
     <div class="cart-product-dis">
-   
-    <div class="prd-name">Product</div>
-    <div class="prd-quantity">Quantity</div>
-    <div class="prd-price">Price</div>
+      <div class="prd-name">Product</div>
+      <div class="prd-quantity">Quantity</div>
+      <div class="prd-price">Price</div>
     </div>
-    <div class="cart" class="cart-items" id="cart">
+    <div class="cart" class="cart-items" id="cart"></div>
 
-
- 
-     
-    </div>
-
-    
     <script>
-        // Retrieve itemData and itemHTML from local storage
-        var storedItemData = localStorage.getItem('itemData');
-        var storedItemHTML = localStorage.getItem('itemHTML');
-        
-        if (storedItemData && storedItemHTML) {
-            var itemData = JSON.parse(storedItemData);
-    
-            // Set the content of the elements in the second HTML page
-            var cart = document.getElementById('cart');
-            cart.innerHTML += storedItemHTML;
+      // Retrieve itemData and itemHTML from local storage
+      var storedItemData = localStorage.getItem("itemData");
+      var storedItemHTML = localStorage.getItem("itemHTML");
 
-            function deleteItem1() {
-        // Clear local storage
-        localStorage.removeItem('itemData');
-        localStorage.removeItem('itemHTML');
+      if (storedItemData && storedItemHTML) {
+        var itemData = JSON.parse(storedItemData);
 
-        // Clear the display container
-        var cart1 = document.getElementById('cart1');
-        cart1.innerHTML = '';
+        // Set the content of the elements in the second HTML page
+        var cart = document.getElementById("cart");
+        cart.innerHTML += storedItemHTML;
 
-        location.reload();
-        updateTotalPrice();
-    }
-    
-            
+        function deleteItem1() {
+          // Clear local storage
+          localStorage.removeItem("itemData");
+          localStorage.removeItem("itemHTML");
+
+          // Clear the display container
+          var cart1 = document.getElementById("cart1");
+          cart1.innerHTML = "";
+
+          location.reload();
         }
+      }
     </script>
     <script>
-        // Retrieve itemData and itemHTML from local storage
-        var storedItemData2 = localStorage.getItem('itemData2');
-        var storedItemHTML2 = localStorage.getItem('itemHTML2');
-        
-        if (storedItemData2 && storedItemHTML2) {
-            var itemData2 = JSON.parse(storedItemData2);
-    
-            // Set the content of the elements in the second HTML page
-            var cart = document.getElementById('cart');
-            cart.innerHTML += storedItemHTML2;
-    
-            function deleteItem2() {
-        // Clear local storage
-        localStorage.removeItem('itemData2');
-        localStorage.removeItem('itemHTML2');
+      // Retrieve itemData and itemHTML from local storage
+      var storedItemData2 = localStorage.getItem("itemData2");
+      var storedItemHTML2 = localStorage.getItem("itemHTML2");
 
-        // Clear the display container
-        var car2 = document.getElementById('cart2');
-        cart2.innerHTML = '';
+      if (storedItemData2 && storedItemHTML2) {
+        var itemData2 = JSON.parse(storedItemData2);
 
-        location.reload();
-         }   
+        // Set the content of the elements in the second HTML page
+        var cart = document.getElementById("cart");
+        cart.innerHTML += storedItemHTML2;
+
+        function deleteItem2() {
+          // Clear local storage
+          localStorage.removeItem("itemData2");
+          localStorage.removeItem("itemHTML2");
+
+          // Clear the display container
+          var car2 = document.getElementById("cart2");
+          cart2.innerHTML = "";
+
+          location.reload();
         }
- 
-
+      }
     </script>
     <!-- <script>
         // Retrieve itemData and itemHTML from local storage
@@ -242,79 +238,140 @@
          }
     </script> -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get the input element
-            var quantityInput1 = document.getElementById('quantityInput1');
-    
-            // Add event listener to the input element
-            quantityInput1.addEventListener('input', function () {
-                // Ensure the value is always 1 or greater
-                if (quantityInput1.value < 1) {
-                    quantityInput1.value = 1;
-                }
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput1 = document.getElementById("quantityInput1");
+
+        // Add event listener to the input element
+        quantityInput1.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput1.value < 1) {
+            quantityInput1.value = 1;
+          }
         });
+      });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get the input element
-            var quantityInput2 = document.getElementById('quantityInput2');
-    
-            // Add event listener to the input element
-            quantityInput2.addEventListener('input', function () {
-                // Ensure the value is always 1 or greater
-                if (quantityInput2.value < 1) {
-                    quantityInput2.value = 1;
-                }
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput2 = document.getElementById("quantityInput2");
+
+        // Add event listener to the input element
+        quantityInput2.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput2.value < 1) {
+            quantityInput2.value = 1;
+          }
         });
+      });
     </script>
     <script>
-        // Retrieve itemData from local storage
-        var storedItemData = JSON.parse(localStorage.getItem('itemData'));
-        var storedItemData2 = JSON.parse(localStorage.getItem('itemData2'));
-        // Check if itemData is not null or undefined
-        
-            // Retrieve the price from itemData and store it in the variable price1
-            if (storedItemData) {
-                var price1 = storedItemData.price;
-               price1 = parseFloat(price1);
-               
-               var myInput = document.getElementById('quantityInput1');
+      // Retrieve itemData from local storage
+      var storedItemData = JSON.parse(localStorage.getItem("itemData"));
+      var storedItemData2 = JSON.parse(localStorage.getItem("itemData2"));
+      // Check if itemData is not null or undefined
+      
+    </script>
+         <!-- <script>
+          // Get the quantity inputs and total price element
+          var quantityInput1 = document.getElementById('quantityInput1');
+          var quantityInput2 = document.getElementById('quantityInput2');
+          var totalPriceElement = document.getElementById('totalPrice');
+  
+          // Example product data from localStorage
+          var storedItemData1 = JSON.parse(localStorage.getItem("itemData")) ;
+          var storedItemData2 = JSON.parse(localStorage.getItem("itemData2")) ;
 
-// Retrieve the numeric value
-               var numericValue = parseFloat(myInput.value);
-
- 
-            
-
-            }
-
-            else{
-                var price1 = 0;
-            }
-
-            if (storedItemData2) {
-                var price2 = storedItemData2.price;
-                price2 = parseFloat(price2);
-            }
-
-            else {
-                var price2 = 0 ;
-            }
-           
+          if (storedItemData1) {
+            var price1 = storedItemData1.price;
+          }
+          else {
+            var price1 = 0 ;
+          }
+          // Set initial prices
+          if (storedItemData2) {
+            var price2 = storedItemData2.price;
+          }
+          else {
+            var price2 = 0 ;
+          }
+          
+  
+          // Function to update total price based on quantity
+          function updateTotalPrice() {
+              // Get the current quantity values
+              if (quantityInput1) {
+                var quantity1 = parseInt(quantityInput1.value);
+              }
+              else{}
+              if (quantityInput2) {
+                var quantity2 = parseInt(quantityInput2.value);
+              }
+              else{}
+              
              
-            var total = price1 + price2 ;
-            // Use the price as needed (e.g., display it, perform calculations, etc.)
-            if (total) {
+              // Calculate the total price
+              var total = (price1 * quantity1) + (price2 * quantity2);
+  
+              // Update the total price element
               document.getElementById('total-price').innerHTML = total;
-              console.log(numericValue);
-            }
-            else{
-                document.getElementById('total-price').innerHTML = 0;
-            }
+          }
+  
+          if (quantityInput1) {
+            quantityInput1.addEventListener('input', updateTotalPrice);
+          }
+          else{
+            
+          }
+          if (quantityInput2) {
+            quantityInput2.addEventListener('input', updateTotalPrice);
+          }
+          else{
 
-    </script>
+          }
+  
+          // Initial calculation of total price
+          updateTotalPrice();
+      </script> -->
+      <script>
+        // Get the quantity inputs and total price element
+        var quantityInput1 = document.getElementById('quantityInput1');
+        var quantityInput2 = document.getElementById('quantityInput2');
+        var totalPriceElement = document.getElementById('totalPrice');
+      
+        // Example product data from localStorage
+        var storedItemData1 = JSON.parse(localStorage.getItem("itemData")) || { price: 0 };
+        var storedItemData2 = JSON.parse(localStorage.getItem("itemData2")) || { price: 0 };
+      
+        var price1 = storedItemData1.price;
+        var price2 = storedItemData2.price;
+      
+        // Function to update total price based on quantity
+        function updateTotalPrice() {
+          // Get the current quantity values
+          var quantity1 = quantityInput1 ? parseInt(quantityInput1.value) || 0 : 0;
+          var quantity2 = quantityInput2 ? parseInt(quantityInput2.value) || 0 : 0;
+      
+          // Calculate the total price
+          var total = (price1 * quantity1) + (price2 * quantity2);
+      
+          // Update the total price element
+          document.getElementById('total-price').innerHTML = total;
+        }
+      
+        // Add 'input' event listeners to update total price if inputs are present
+        if (quantityInput1) {
+          quantityInput1.addEventListener('input', updateTotalPrice);
+        }
+      
+        if (quantityInput2) {
+          quantityInput2.addEventListener('input', updateTotalPrice);
+        }
+      
+        // Initial calculation of total price
+        updateTotalPrice();
+      </script>
+      
 
-</body>
+  </body>
 </html>

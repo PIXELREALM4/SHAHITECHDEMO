@@ -51,6 +51,41 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        function addCrt3() {
+          var itemName = document.querySelector('.prd-name h3').innerText;
+          var itemPrice = document.querySelector('.prd-price h4 span').innerText;
+          var itemImgSrc = document.querySelector('.prd-img-1 img').src;
+          
+          var itemData3 = {
+              name: itemName,
+              price: itemPrice,
+              imgSrc: itemImgSrc
+          };
+        
+          localStorage.setItem('itemData3', JSON.stringify(itemData3));
+  
+          var itemHTML3 = `
+          <div class="prd-cart prd-1" id="cart1">
+            
+              <div class="cart-img">
+                  <div class="cart-img-dis"><img src="${itemData3.imgSrc}" alt=""></div>
+              </div>
+              <div class="cart-name">${itemData3.name}</div>
+              <div class="cart-quantity"><input class="cart-quantity-input" type="number" value="1" id="quantityInput1" ></div>
+              <div class="cart-price">${itemData3.price}</div>
+              <div class="cart-delete">
+                  <button onclick="deleteItem1()"><i class="fas fa-times"></i></button>
+              </div>
+          </div>
+          
+          `;
+  
+          
+          
+          localStorage.setItem('itemHTML3', itemHTML3);
+                     
+        }
+     </script>
 </body>
 </html>
