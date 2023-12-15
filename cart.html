@@ -49,6 +49,7 @@
           location.reload();
         }
       }
+     
     </script>
     <script>
       // Retrieve itemData and itemHTML from local storage
@@ -75,7 +76,7 @@
         }
       }
     </script>
-    <!-- <script>
+    <script>
         // Retrieve itemData and itemHTML from local storage
         var storedItemData3 = localStorage.getItem('itemData3');
         var storedItemHTML3 = localStorage.getItem('itemHTML3');
@@ -90,10 +91,10 @@
             
         }
 
-        function deleteItem2() {
+        function deleteItem3() {
         // Clear local storage
-        localStorage.removeItem('itemData2');
-        localStorage.removeItem('itemHTML2');
+        localStorage.removeItem('itemData3');
+        localStorage.removeItem('itemHTML3');
 
         // Clear the display container
         var cart3 = document.getElementById('cart3');
@@ -236,7 +237,170 @@
 
         location.reload();
          }
-    </script> -->
+    </script>
+    <script>
+        // Retrieve itemData and itemHTML from local storage
+        var storedItemData9 = localStorage.getItem('itemData9');
+        var storedItemHTML9 = localStorage.getItem('itemHTML9');
+        
+        if (storedItemData9 && storedItemHTML9) {
+            var itemData9 = JSON.parse(storedItemData9);
+    
+            // Set the content of the elements in the second HTML page
+            var cart = document.getElementById('cart');
+            cart.innerHTML += storedItemHTML9;
+    
+            
+        }
+
+        function deleteItem9() {
+        // Clear local storage
+        localStorage.removeItem('itemData9');
+        localStorage.removeItem('itemHTML9');
+
+        // Clear the display container
+        var cart9 = document.getElementById('cart9');
+        cart9.innerHTML = '';
+
+        location.reload();
+         }
+    </script>
+    <script>
+        // Retrieve itemData and itemHTML from local storage
+        var storedItemData10 = localStorage.getItem('itemData10');
+        var storedItemHTML10 = localStorage.getItem('itemHTML10');
+        
+        if (storedItemData10 && storedItemHTML10) {
+            var itemData10 = JSON.parse(storedItemData10);
+    
+            // Set the content of the elements in the second HTML page
+            var cart = document.getElementById('cart');
+            cart.innerHTML += storedItemHTML10;
+    
+            
+        }
+
+        function deleteItem10() {
+        // Clear local storage
+        localStorage.removeItem('itemData10');
+        localStorage.removeItem('itemHTML10');
+
+        // Clear the display container
+        var cart10 = document.getElementById('cart10');
+        cart10.innerHTML = '';
+
+        location.reload();
+         }
+    </script>
+    <script>
+        // Retrieve itemData and itemHTML from local storage
+        var storedItemData11 = localStorage.getItem('itemData11');
+        var storedItemHTML11 = localStorage.getItem('itemHTML11');
+        
+        if (storedItemData11 && storedItemHTML11) {
+            var itemData11 = JSON.parse(storedItemData11);
+    
+            // Set the content of the elements in the second HTML page
+            var cart = document.getElementById('cart');
+            cart.innerHTML += storedItemHTML11;
+    
+            
+        }
+
+        function deleteItem11() {
+        // Clear local storage
+        localStorage.removeItem('itemData11');
+        localStorage.removeItem('itemHTML11');
+
+        // Clear the display container
+        var cart11 = document.getElementById('cart11');
+        cart11.innerHTML = '';
+
+        location.reload();
+         }
+    </script>
+    <script>
+        // Retrieve itemData and itemHTML from local storage
+        var storedItemData12 = localStorage.getItem('itemData12');
+        var storedItemHTML12 = localStorage.getItem('itemHTML12');
+        
+        if (storedItemData12 && storedItemHTML12) {
+            var itemData12 = JSON.parse(storedItemData12);
+    
+            // Set the content of the elements in the second HTML page
+            var cart = document.getElementById('cart');
+            cart.innerHTML += storedItemHTML12;
+    
+            
+        }
+
+        function deleteItem12() {
+        // Clear local storage
+        localStorage.removeItem('itemData12');
+        localStorage.removeItem('itemHTML12');
+
+        // Clear the display container
+        var cart12 = document.getElementById('cart12');
+        cart12.innerHTML = '';
+
+        location.reload();
+         }
+    </script>
+    <script>
+        // Retrieve itemData and itemHTML from local storage
+        var storedItemData13 = localStorage.getItem('itemData13');
+        var storedItemHTML13 = localStorage.getItem('itemHTML13');
+        
+        if (storedItemData13 && storedItemHTML13) {
+            var itemData13 = JSON.parse(storedItemData13);
+    
+            // Set the content of the elements in the second HTML page
+            var cart = document.getElementById('cart');
+            cart.innerHTML += storedItemHTML13;
+    
+            
+        }
+
+        function deleteItem13() {
+        // Clear local storage
+        localStorage.removeItem('itemData13');
+        localStorage.removeItem('itemHTML13');
+
+        // Clear the display container
+        var cart13 = document.getElementById('cart13');
+        cart13.innerHTML = '';
+
+        location.reload();
+         }
+    </script>
+    <script>
+        // Retrieve itemData and itemHTML from local storage
+        var storedItemData14 = localStorage.getItem('itemData14');
+        var storedItemHTML14 = localStorage.getItem('itemHTML14');
+        
+        if (storedItemData14 && storedItemHTML14) {
+            var itemData14 = JSON.parse(storedItemData14);
+    
+            // Set the content of the elements in the second HTML page
+            var cart = document.getElementById('cart');
+            cart.innerHTML += storedItemHTML14;
+    
+            
+        }
+
+        function deleteItem14() {
+        // Clear local storage
+        localStorage.removeItem('itemData14');
+        localStorage.removeItem('itemHTML14');
+
+        // Clear the display container
+        var cart14 = document.getElementById('cart14');
+        cart14.innerHTML = '';
+
+        location.reload();
+         }
+    </script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Get the input element
@@ -266,94 +430,258 @@
       });
     </script>
     <script>
-      // Retrieve itemData from local storage
-      var storedItemData = JSON.parse(localStorage.getItem("itemData"));
-      var storedItemData2 = JSON.parse(localStorage.getItem("itemData2"));
-      // Check if itemData is not null or undefined
-      
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput3 = document.getElementById("quantityInput3");
+
+        // Add event listener to the input element
+        quantityInput3.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput3.value < 1) {
+            quantityInput3.value = 1;
+          }
+        });
+      });
     </script>
-         <!-- <script>
-          // Get the quantity inputs and total price element
-          var quantityInput1 = document.getElementById('quantityInput1');
-          var quantityInput2 = document.getElementById('quantityInput2');
-          var totalPriceElement = document.getElementById('totalPrice');
-  
-          // Example product data from localStorage
-          var storedItemData1 = JSON.parse(localStorage.getItem("itemData")) ;
-          var storedItemData2 = JSON.parse(localStorage.getItem("itemData2")) ;
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput4 = document.getElementById("quantityInput4");
 
-          if (storedItemData1) {
-            var price1 = storedItemData1.price;
+        // Add event listener to the input element
+        quantityInput4.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput4.value < 1) {
+            quantityInput4.value = 1;
           }
-          else {
-            var price1 = 0 ;
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput5 = document.getElementById("quantityInput5");
+
+        // Add event listener to the input element
+        quantityInput5.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput5.value < 1) {
+            quantityInput5.value = 1;
           }
-          // Set initial prices
-          if (storedItemData2) {
-            var price2 = storedItemData2.price;
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput6 = document.getElementById("quantityInput6");
+
+        // Add event listener to the input element
+        quantityInput6.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput6.value < 1) {
+            quantityInput6.value = 1;
           }
-          else {
-            var price2 = 0 ;
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput7 = document.getElementById("quantityInput7");
+
+        // Add event listener to the input element
+        quantityInput7.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput7.value < 1) {
+            quantityInput7.value = 1;
           }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput8 = document.getElementById("quantityInput8");
+
+        // Add event listener to the input element
+        quantityInput8.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput8.value < 1) {
+            quantityInput8.value = 1;
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput9= document.getElementById("quantityInput9");
+
+        // Add event listener to the input element
+        quantityInput9.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput9.value < 1) {
+            quantityInput9.value = 1;
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput10 = document.getElementById("quantityInput10");
+
+        // Add event listener to the input element
+        quantityInput10.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput10.value < 1) {
+            quantityInput10.value = 1;
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput11 = document.getElementById("quantityInput11");
+
+        // Add event listener to the input element
+        quantityInput11.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput11.value < 1) {
+            quantityInput11.value = 1;
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput12 = document.getElementById("quantityInput12");
+
+        // Add event listener to the input element
+        quantityInput12.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput12.value < 1) {
+            quantityInput12.value = 1;
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput13 = document.getElementById("quantityInput13");
+
+        // Add event listener to the input element
+        quantityInput13.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput13.value < 1) {
+            quantityInput13.value = 1;
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element
+        var quantityInput14 = document.getElementById("quantityInput14");
+
+        // Add event listener to the input element
+        quantityInput14.addEventListener("input", function () {
+          // Ensure the value is always 1 or greater
+          if (quantityInput14.value < 1) {
+            quantityInput14.value = 1;
+          }
+        });
+      });
+    </script>
           
-  
-          // Function to update total price based on quantity
-          function updateTotalPrice() {
-              // Get the current quantity values
-              if (quantityInput1) {
-                var quantity1 = parseInt(quantityInput1.value);
-              }
-              else{}
-              if (quantityInput2) {
-                var quantity2 = parseInt(quantityInput2.value);
-              }
-              else{}
-              
-             
-              // Calculate the total price
-              var total = (price1 * quantity1) + (price2 * quantity2);
-  
-              // Update the total price element
-              document.getElementById('total-price').innerHTML = total;
-          }
-  
-          if (quantityInput1) {
-            quantityInput1.addEventListener('input', updateTotalPrice);
-          }
-          else{
-            
-          }
-          if (quantityInput2) {
-            quantityInput2.addEventListener('input', updateTotalPrice);
-          }
-          else{
-
-          }
-  
-          // Initial calculation of total price
-          updateTotalPrice();
-      </script> -->
+          <!-- CART TOTAL AND QUANTITY CALCULATIONS FUNCTION  -->
+         
       <script>
         // Get the quantity inputs and total price element
         var quantityInput1 = document.getElementById('quantityInput1');
         var quantityInput2 = document.getElementById('quantityInput2');
+        var quantityInput3 = document.getElementById('quantityInput3');
+        var quantityInput4 = document.getElementById('quantityInput4');
+        var quantityInput5 = document.getElementById('quantityInput5');
+        var quantityInput6 = document.getElementById('quantityInput6');
+        var quantityInput7 = document.getElementById('quantityInput7');
+        var quantityInput8 = document.getElementById('quantityInput8');
+        var quantityInput9 = document.getElementById('quantityInput9');
+        var quantityInput10 = document.getElementById('quantityInput10');
+        var quantityInput11 = document.getElementById('quantityInput11');
+        var quantityInput12 = document.getElementById('quantityInput12');
+        var quantityInput13 = document.getElementById('quantityInput13');
+        var quantityInput14 = document.getElementById('quantityInput14');
         var totalPriceElement = document.getElementById('totalPrice');
       
         // Example product data from localStorage
         var storedItemData1 = JSON.parse(localStorage.getItem("itemData")) || { price: 0 };
         var storedItemData2 = JSON.parse(localStorage.getItem("itemData2")) || { price: 0 };
+        var storedItemData3 = JSON.parse(localStorage.getItem("itemData3")) || { price: 0 };
+        var storedItemData4 = JSON.parse(localStorage.getItem("itemData4")) || { price: 0 };
+        var storedItemData5 = JSON.parse(localStorage.getItem("itemData5")) || { price: 0 };
+        var storedItemData6 = JSON.parse(localStorage.getItem("itemData6")) || { price: 0 };
+        var storedItemData7 = JSON.parse(localStorage.getItem("itemData7")) || { price: 0 };
+        var storedItemData8 = JSON.parse(localStorage.getItem("itemData8")) || { price: 0 };
+        var storedItemData9 = JSON.parse(localStorage.getItem("itemData9")) || { price: 0 };
+        var storedItemData10 = JSON.parse(localStorage.getItem("itemData10")) || { price: 0 };
+        var storedItemData11 = JSON.parse(localStorage.getItem("itemData11")) || { price: 0 };
+        var storedItemData12 = JSON.parse(localStorage.getItem("itemData12")) || { price: 0 };
+        var storedItemData13 = JSON.parse(localStorage.getItem("itemData13")) || { price: 0 };
+        var storedItemData14 = JSON.parse(localStorage.getItem("itemData14")) || { price: 0 };
       
         var price1 = storedItemData1.price;
         var price2 = storedItemData2.price;
+        var price3 = storedItemData3.price;
+        var price4 = storedItemData4.price;
+        var price5 = storedItemData5.price;
+        var price6 = storedItemData6.price;
+        var price7 = storedItemData7.price;
+        var price8 = storedItemData8.price;
+        var price9 = storedItemData9.price;
+        var price10 = storedItemData10.price;
+        var price11 = storedItemData11.price;
+        var price12 = storedItemData12.price;
+        var price13= storedItemData13.price;
+        var price14 = storedItemData14.price;
       
         // Function to update total price based on quantity
         function updateTotalPrice() {
           // Get the current quantity values
           var quantity1 = quantityInput1 ? parseInt(quantityInput1.value) || 0 : 0;
           var quantity2 = quantityInput2 ? parseInt(quantityInput2.value) || 0 : 0;
+          var quantity3 = quantityInput3 ? parseInt(quantityInput3.value) || 0 : 0;
+          var quantity4 = quantityInput4 ? parseInt(quantityInput4.value) || 0 : 0;
+          var quantity5 = quantityInput5 ? parseInt(quantityInput5.value) || 0 : 0;
+          var quantity6 = quantityInput6 ? parseInt(quantityInput6.value) || 0 : 0;
+          var quantity7 = quantityInput7 ? parseInt(quantityInput7.value) || 0 : 0;
+          var quantity8 = quantityInput8 ? parseInt(quantityInput8.value) || 0 : 0;
+          var quantity9 = quantityInput9 ? parseInt(quantityInput9.value) || 0 : 0;
+          var quantity10 = quantityInput10 ? parseInt(quantityInput10.value) || 0 : 0;
+          var quantity11 = quantityInput11 ? parseInt(quantityInput11.value) || 0 : 0;
+          var quantity12 = quantityInput12 ? parseInt(quantityInput12.value) || 0 : 0;
+          var quantity13 = quantityInput13 ? parseInt(quantityInput13.value) || 0 : 0;
+          var quantity14 = quantityInput14 ? parseInt(quantityInput14.value) || 0 : 0;
       
           // Calculate the total price
-          var total = (price1 * quantity1) + (price2 * quantity2);
+          var total = (price1 * quantity1) + 
+                      (price2 * quantity2) + 
+                      (price3 * quantity3) +  
+                      (price4 * quantity4) +
+                      (price5 * quantity5) +
+                      (price6 * quantity6) +
+                      (price7 * quantity7) +
+                      (price8 * quantity8) +
+                      (price9 * quantity9) +
+                      (price10 * quantity10) + 
+                      (price11 * quantity11) + 
+                      (price12 * quantity12) + 
+                      (price13 * quantity13) + 
+                      (price14 * quantity14) ; 
       
           // Update the total price element
           document.getElementById('total-price').innerHTML = total;
@@ -367,6 +695,46 @@
         if (quantityInput2) {
           quantityInput2.addEventListener('input', updateTotalPrice);
         }
+
+              
+        if (quantityInput3) {
+          quantityInput3.addEventListener('input', updateTotalPrice);
+        }
+        
+        if (quantityInput4) {
+          quantityInput4.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput5) {
+          quantityInput5.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput6) {
+          quantityInput6.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput7) {
+          quantityInput7.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput8) {
+          quantityInput8.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput9) {
+          quantityInput9.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput10) {
+          quantityInput10.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput11) {
+          quantityInput11.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput12) {
+          quantityInput12.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput13) {
+          quantityInput13.addEventListener('input', updateTotalPrice);
+        }
+        if (quantityInput14) {
+          quantityInput14.addEventListener('input', updateTotalPrice);
+        }
+
       
         // Initial calculation of total price
         updateTotalPrice();

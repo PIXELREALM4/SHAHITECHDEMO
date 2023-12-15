@@ -107,6 +107,10 @@ a:hover{
   color: white;
 }
 
+.cart::after{
+  display: none;
+}
+
 .checkbtn{
   font-size: 30px;
   float: right;
@@ -660,7 +664,7 @@ display: none;
 }
 
 .bstbtn-shop{
-  padding: 15px  25%;
+  padding: 15px  36%;
   background-color: #f08ecf44;
   border-radius: 50px;
   

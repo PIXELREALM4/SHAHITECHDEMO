@@ -14,22 +14,22 @@
         <div class="prd">
             <div class="prd-img">
                 <div class="prd-img-multi">
-                  <div class="prd-img-multi-pht" class]="active" onclick="changeImage(0)"><img src="download.jfif" alt=""></div>
-                  <div class="prd-img-multi-pht" onclick="changeImage(1)"><img src="OIP (5).jfif" alt=""></div>
-                  <div class="prd-img-multi-pht"  onclick="changeImage(2)"><img src="OIP (6).jfif" alt=""></div>
-                  <div class="prd-img-multi-pht"  onclick="changeImage(3)"><img src="OIP (7).jfif" alt=""></div>
+                  <div class="prd-img-multi-pht" class]="active" onclick="changeImage(0)"><img src="images/WA-IMG-20231101-b7767e36.jpg" alt=""></div>
+                  <div class="prd-img-multi-pht" onclick="changeImage(1)"><img src="images/WA-IMG-20231101-16805fcb.jpg" alt=""></div>
+                  <div class="prd-img-multi-pht"  onclick="changeImage(2)"><img src="images/WA-IMG-20231101-0898b0cf.jpg" alt=""></div>
+                  <div class="prd-img-multi-pht"  onclick="changeImage(3)"><img src="images/WA-IMG-20231101-2cbd68e3.jpg" alt=""></div>
                 </div>
                 <div class="prd-img-scrn">
                  <div class="prd-img-scrn-dis">
-                    <img src="download.jfif" alt="">
+                    <img src="images/WA-IMG-20231101-b7767e36.jpg" alt="">
                  </div>
                 </div>
             </div>
             <div class="prd-info">
-                <div class="prd-name"><h3>AIRPODS</h3></div>
+                <div class="prd-name"><h3>straps</h3></div>
                 <div class="prd-info-dis">
                     <div class="prd-info-dis-int">
-                        <div class="prd-price"><h4>6000 Rs.</h4></div>
+                        <div class="prd-price"><h4>Rs. <span>250</span></h4></div>
                         <div class="prd-dis">
                         <h5>DESCRIPTION:-</h5>
                         <ul>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="prd-info-crt">
                         <a href="" class="check-out">CHECK OUT</a>
-                        <a href="" class="add-crt">ADD TO CART</a>
+                        <button class="shop-item-button" onclick="addCrt11()" >Add to Cart</button>
                         <h6>NOTE</h6>
                         <p>Please be advised that our delivery services are exclusively available within Pakistan. We regret to inform you that we cannot facilitate international shipments at this time. For any delivery-related queries or concerns, please do not hesitate to contact our customer support team. We appreciate your understanding and look forward to serving you within Pakistan.</p>
                     </div>
@@ -51,6 +51,43 @@
             </div>
         </div>
     </div>
-    
+        <div class="prd-img-1" style="display: none;"><img src="images/WA-IMG-20231101-b7767e36.jpg" alt=""></div> 
+    <script>
+        function addCrt11() {
+          var itemName = document.querySelector('.prd-name h3').innerText;
+          var itemPrice = document.querySelector('.prd-price h4 span').innerText;
+          var itemImgSrc = document.querySelector('.prd-img-1 img').src;
+          
+          var itemData11 = {
+              name: itemName,
+              price: itemPrice,
+              imgSrc: itemImgSrc
+          };
+        
+          localStorage.setItem('itemData11', JSON.stringify(itemData11));
+  
+          var itemHTML11 = `
+          <div class="prd-cart prd-1" id="cart11">
+            
+              <div class="cart-img">
+                  <div class="cart-img-dis"><img src="${itemData11.imgSrc}" alt=""></div>
+              </div>
+              <div class="cart-name">${itemData11.name}</div>
+              <div class="cart-quantity"><input class="cart-quantity-input" type="number" value="1" id="quantityInput11" ></div>
+              <div class="cart-price">${itemData11.price}</div>
+              <div class="cart-delete">
+                  <button onclick="deleteItem11()"><i class="fas fa-times"></i></button>
+              </div>
+          </div>
+          
+          `;
+  
+          
+          
+          localStorage.setItem('itemHTML11', itemHTML11);
+                     
+        }
+     </script>
+     <script src="script/product.js"></script>
 </body>
 </html>
