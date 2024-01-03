@@ -147,8 +147,14 @@ body{
     
 }
 
+.prd-info-crt a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .prd-info-crt p{
     color: #636363;
+    font-size: 0.8rem;
 }
 .prd-dis h5{
     padding-top: 20px;
@@ -187,13 +193,28 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+.shop-item-button-2{
+    display: inline-block;
+    background-color: #353535; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 103.5px; /* Padding to adjust the button size */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    margin: 5px; /* Add margin to separate the buttons */
+    text-decoration: none;
+    cursor: pointer;
+}
 
-.check-out:hover, .add-crt:hover , .shop-item-button:hover {
+.check-out:hover, .add-crt:hover , .shop-item-button:hover , .shop-item-button-2:hover {
     background-color: #464646; /* Change background color on hover */
 }
 
 .check-out{
     padding: 10px 90px;
+}
+
+.prd-dis ul{
+    font-size: 0.9rem;
 }
 
 h6{

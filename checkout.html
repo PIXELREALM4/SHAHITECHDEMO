@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="bck-btn"><a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a></div>
+        <h2>PLEASE FILL THE FORM!</h2>
+        <div class="name">
+            <div class="frst-name"><input type="text" id="first_name" name="first_name" required placeholder="First Name* " required ></div>
+            <div class="last-name"><input type="text" id="last_name" name="last_name" placeholder="Last Name" ></div>
+        </div>
+        <div class="address"><input type="text" id="address" name="address" placeholder="Address*" required></div>
+        <div class="ph-no"><img class="flag-icon" src="images/pakistan.png" alt="Pakistan Flag" width="20" height="20">
+        <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" pattern="^((\+92)|(0092))?-?3[0-9]{9}$" required></div>
+        <div class="email"><input type="email" id="email" name="email" placeholder="E-mail*" required></div>
+        <div class="notice"><p>*!Please note that the delivery is only available within the country!*</p></div>
+        <div class="checkout-btn">
+            <a href="javascript:history.back()">Cancel</a><button onclick="popup()">Checkout</button>
+        </div>
+        
+    </div>
+    <div class="confr-popup" id="popup">
+        <h5>PLEASE  CONFIRM  AGAIN</h5>
+        <div class="btnz">
+            <div class="cancl"><button onclick="pop()">Cancel</button></div>
+            <div class="confirm"><button type="submit">Checkout</button></div>
+            
+        </div>
+    </div>
+    <script>
+        function popup() {
+            document.getElementById('popup').style.display = 'block' ;
+        }
+        function pop() {
+            document.getElementById('popup').style.display = 'none' ;
+        }
+    </script>
+</body>
+</html>

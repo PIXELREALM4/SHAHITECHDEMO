@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(77, 77, 77);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-div{
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;    
+    text-align: center;
+}
+
+.bck-btn{
+    height: 9%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bck-btn a {
+    padding-left: 2%;
+    font-size: 35px;
+    color: black;
+}
+
+.name{
+    height: 8%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.name input{
+    height: 30px;
+    width: 100% ;
+
+}
+
+.frst-name{
+    padding-right: 28.1%;
+}
+
+
+.address{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address input{
+    width: 60%;
+    height: 30px;
+}
+
+.ph-no{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ph-no input{
+    width: 20%;
+    height: 30px;
+}
+
+.email{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email input{
+    width: 22%;
+    height: 30px;
+}
+
+h2{
+    padding-bottom: 30px;
+}
+
+.notice{
+    padding: 40px;
+}
+
+.checkout-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8%;
+    width: 100%;
+}
+
+.checkout-btn button{
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.checkout-btn a{
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    background-color: gray;
+    padding: 10px 24px;
+    font-size: 25px;
+}
+
+.confr-popup{
+    position: absolute;
+    height: 30%;
+    width: 40%;
+    background-color: rgb(77, 77, 77);
+    text-align: center;
+    border-radius: 30px;
+    display: none;
+
+    
+}
+
+.confr-popup h5{
+    width: 100%;
+    height: 10%;
+    padding-top:7%;
+    padding-bottom: 10%;
+    color: white;
+    font-size: 25px;
+}
+
+.btnz{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.confirm button{
+   border: solid 3px orange;
+   padding:  0 20%;
+   height: 40px;
+   border-radius: 25px;
+   background-color: white;
+   cursor: pointer;
+}
+
+.cancl button{
+    border: none;
+    padding: 0 40% ;
+    height: 42px;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
