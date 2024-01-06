@@ -12,8 +12,8 @@
 }
 
 .swiper {
-    width: 340px;
-    height: 420px;
+    width: 16rem;
+    height: 26rem;
     position: relative;
   }
 
@@ -36,8 +36,8 @@
   }
 
   .swiper-img{
-    height: 90px;
-    width: 90px;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     background-color: rgba(137, 43, 226, 0.596);
     object-fit: cover;
@@ -46,8 +46,8 @@
    
   .swiper-img img{
     object-fit: cover;
-    height: 90px;
-    width: 90px;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
   }
  

@@ -9,7 +9,7 @@
 body{
     background-color: rgb(82, 82, 82);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +22,8 @@ body{
 
 .container{
     width: 95%;
-    
     height: 90vh;
+    
     border-radius: 25px;
     background-color: white;
 }
@@ -33,7 +33,7 @@ body{
     width: 100%;
     height: 8%;
   
-    font-size: 40px;
+    font-size: 2.5rem;
     text-decoration: none;
     
     justify-content: center;
@@ -121,7 +121,7 @@ body{
 
 .prd-name h3{
   padding-left: 40px;
-  font-size: 60px;
+  font-size: 3rem;
 }
 
 .prd-info-dis{
@@ -222,9 +222,9 @@ h6{
 }
 
 p{
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .prd-price{
@@ -236,8 +236,8 @@ p{
 }
 
 .prd-price h4{
-    font-size: 50px;
-    padding-left: 40px;
+    font-size: 2rem;
+    padding-left: 3rem;
 }
 
 
@@ -251,33 +251,8 @@ p{
     border: 4px solid #c42121; /* Add a black border to the active image */
 }
 
-#decrement{
-    height: 40px;
-    width: 40px;
-    background-color: #464646;
-    color: white;
+@media (max-width: 952px) {
+    .prd{
+        display: block;
+    }
 }
-
-#quantity{
-    padding: 0px 15px 0px 15px;
-}
-
-#increment{
-    height: 40px;
-    width: 40px;
-    background-color: #464646;
-    color: white;
-}
-
-.quantity-edit{
-    margin-top: 30px;
-}
-
-#decrement, #increment{
-    cursor: pointer;
-}
-#decrement:hover , #increment:hover{
-    background-color: #636363;
-
-}
-

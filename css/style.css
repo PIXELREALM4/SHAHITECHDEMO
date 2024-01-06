@@ -153,11 +153,11 @@ display: none;
 
 .slider-container h4{
   position: relative;
-  padding-top: 100px;
-  padding-left: 70px;
+  padding-top: 6.2rem;
+  padding-left: 4.4rem;
   font-family: 'Raleway', sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 5vw;
+  font-size: 4rem;
 }
 
 .slider-container h4::after{
@@ -171,13 +171,13 @@ display: none;
 }
 
 .slider-container p{
-  margin-left: 3vw;
-  margin-right: 3vw;
-  margin-top: 60px;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
   display: flex;
-  line-height: 2.7vw;
+  line-height: 2rem;
   text-align: left;
-  font-size: 1.8vw;
+  font-size: 1.5rem;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: white;
 }
@@ -278,7 +278,7 @@ display: none;
 } */
 .product-img-1 h6 {
   position: absolute;
-  font-size: 5vw; /* Use percentage (e.g., font-size: 5%) for responsiveness */
+  font-size: 4rem; /* Use percentage (e.g., font-size: 5%) for responsiveness */
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   top: 20%; /* Use percentage for top positioning */
@@ -321,7 +321,7 @@ display: none;
 
 .product-img-2 h6 {
  position: absolute;
- font-size: 5vw; /* Use percentage (e.g., font-size: 5%) for responsiveness */
+ font-size: 4rem; /* Use percentage (e.g., font-size: 5%) for responsiveness */
 
  top: 38%; /* Use percentage for top positioning */
  left: 21%; /* Use percentage for left positioning */
@@ -377,7 +377,7 @@ display: none;
 } */
 .product-img-3 h6 {
  position: absolute;
- font-size: 5vw; /* Use percentage (e.g., font-size: 5%) for responsiveness */
+ font-size: 4rem; /* Use percentage (e.g., font-size: 5%) for responsiveness */
  writing-mode: vertical-rl;
  transform: rotate(180deg);
  top: 20%; /* Use percentage for top positioning */
@@ -432,7 +432,7 @@ display: none;
 } */
 .product-img-4 h6 {
  position: absolute;
- font-size: 5vw; /* Use percentage (e.g., font-size: 5%) for responsiveness */
+ font-size: 4rem; /* Use percentage (e.g., font-size: 5%) for responsiveness */
 
  top: 20%; /* Use percentage for top positioning */
  left: 30%; /* Use percentage for left positioning */
@@ -513,7 +513,7 @@ display: none;
 .shop h4{
   font-family: 'Raleway', sans-serif;
   color: white;
-  font-size: 5vw;
+  font-size: 4rem;
   padding-top: 5%;
   padding-left: 8%;
 
@@ -560,13 +560,13 @@ display: none;
 }
 
 .abbst h4{
-  font-size: 3vw;
+  font-size: 1.5rem !important; 
 }
 
 .abbst ul{
   font-size: 1rem;
-  margin-top: 20px;
-  margin-left: 30px;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
   margin-bottom: 10px;
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -590,8 +590,8 @@ display: none;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-duration: 15s;
-  width: 120%;
-  height: 120%;
+  width: 19rem;
+  height: 19rem;
   
   
 }
@@ -681,33 +681,33 @@ display: none;
 
 .shop h4 img{
   
-  transform: translateY(4vw);
+  transform: translateY(4rem);
   position: absolute;
-  height: 1vw;
-  width: 1vw;
+  height: 1rem;
+  width: 1rem;
 }
 .spart-1{
-    transform: translateX(5vw);
-    left: 8vw;
+    transform: translateX(5rem);
+    left: 3rem;
     animation: fadeAndMove1 1.5s ease-in infinite;
     opacity: 0;
 }
 @keyframes fadeAndMove1 {
   0% {
       opacity: 0;
-      transform: translateY(2vw);
+      transform: translateY(2rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(-3vw, 4vw); /* Adjust the distance as needed */
+      transform: translate(-3rem, 4rem); /* Adjust the distance as needed */
   }
 }
 
 .spart-2{
-    left: 9.5vw;
-    transform: translateX(5vw);
+    left: 3.5rem;
+    transform: translateX(5rem);
     animation: fadeAndMove2 2.5s ease-in infinite;
     opacity: 0;
     height:15px ;
@@ -716,157 +716,157 @@ display: none;
 @keyframes fadeAndMove2 {
   0% {
       opacity: 0;
-      transform: translateY(4vw);
+      transform: translateY(4rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(-2vw, 6vw); 
+      transform: translate(-2rem, 6rem); 
   }
 }
 .spart-3{
-  transform: translateX(5vw);
-  left: 10.5vw;
+  transform: translateX(5rem);
+  left: 6rem;
   animation: fadeAndMove3 5s ease-in infinite;
   opacity: 0;
 }
 @keyframes fadeAndMove3 {
   0% {
       opacity: 0;
-      transform: translateY(4vw);
+      transform: translateY(4rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(-2vw, 8vw); 
+      transform: translate(-2rem, 8rem); 
   }
 }
 .spart-4{
-  transform: translateX(5vw);
-  left: 11.5vw;
+  transform: translateX(5rem);
+  left: 6.5rem;
   animation: fadeAndMove4 1.5s ease-in infinite;
   opacity: 0;
 }
 @keyframes fadeAndMove4 {
   0% {
       opacity: 0;
-      transform: translateY(4vw);
+      transform: translateY(4rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(0, 8vw); 
+      transform: translate(0, 8rem); 
   }
 }
 .spart-5{
-  transform: translateX(5vw);
-  left: 12.5vw;
+  transform: translateX(5rem);
+  left: 8rem;
   animation: fadeAndMove5 2.2s ease-in infinite;
   opacity: 0;
 }
 @keyframes fadeAndMove5 {
   0% {
       opacity: 0;
-      transform: translateY(4vw);
+      transform: translateY(4rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(0.5vw, 7vw); 
+      transform: translate(0.5rem, 7rem); 
   }
 }
 .spart-6{
-  transform: translateX(5vw);
-  left: 13.5vw;
+  transform: translateX(5rem);
+  left: 8.1rem;
   animation: fadeAndMove6 3s ease-in infinite;
   opacity: 0;
 }
 @keyframes fadeAndMove6 {
   0% {
       opacity: 0;
-      transform: translateY(4vw);
+      transform: translateY(4rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(1.5vw, 7vw); 
+      transform: translate(1.5rem, 7rem); 
   }
 }
 .spart-7{
-  transform: translateX(5vw);
-  left: 14.5vw;
+  transform: translateX(5rem);
+  left: 9rem;
   animation: fadeAndMove7 2.8s ease-in infinite;
   opacity: 0;
 }
 @keyframes fadeAndMove7 {
   0% {
       opacity: 0;
-      transform: translateY(4vw);
+      transform: translateY(4rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(2vw, 7vw); 
+      transform: translate(2rem, 7rem); 
   }
 }
 .spart-8{
-  transform: translateX(5vw);
-  left: 15.5vw ;
+  transform: translateX(5rem);
+  left: 9.5rem ;
   animation: fadeAndMove8 1.5s ease-in infinite;
   opacity: 0;
 }
 @keyframes fadeAndMove8 {
   0% {
       opacity: 0;
-      transform: translateY(4vw);
+      transform: translateY(4rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(3vw, 8vw); /* Adjust the distance as needed */
+      transform: translate(3rem, 8rem); /* Adjust the distance as needed */
   }
 }
 .spart-9{
-  transform: translateX(5vw);
-  left: 16.5vw;
+  transform: translateX(5rem);
+  left: 10rem;
   animation: fadeAndMove9 4s ease-in infinite;
   opacity: 0;
 }
 @keyframes fadeAndMove9 {
   0% {
       opacity: 0;
-      transform: translateY(4vw);
+      transform: translateY(4rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(4vw, 6vw); /* Adjust the distance as needed */
+      transform: translate(4rem, 6rem); /* Adjust the distance as needed */
   }
 }
 .spart-10{
-  transform: translateX(5vw);
-  left: 17.5vw;
+  transform: translateX(5rem);
+  left: 10rem;
   animation: fadeAndMove10 3s ease-in infinite;
   opacity: 0;
 }
 @keyframes fadeAndMove10 {
   0% {
       opacity: 0;
-      transform: translate(2vw, 2vw);
+      transform: translate(2rem, 2rem);
   }
   50% {
       opacity: 1;
   }
   100% {
-      transform: translate(4vw, 5vw); /* Adjust the distance as needed */
+      transform: translate(4rem, 5rem); /* Adjust the distance as needed */
   }
 }
 .shope{
@@ -993,6 +993,22 @@ display: none;
   .dev{
     display: block;
     text-align: center;
+  }
+
+  .abbst ul {
+    font-size: 0.66rem;
+  }
+
+  .shop h4{
+     font-size: 3.3rem;
+  }
+
+  .insta-prom h4 {
+    font-size: 2.5rem;
+  }
+
+  .insta-prom p{
+    font-size: 1rem;
   }
 
 
