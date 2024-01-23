@@ -22,7 +22,7 @@ body{
 
 .container{
     width: 95%;
-    height: 90vh;
+    min-height: 90vh;
     
     border-radius: 25px;
     background-color: white;
@@ -81,9 +81,9 @@ body{
 
 
 .prd-img-multi-pht{
-    margin: 15px 0px 15px  10px;
-    height: 21%;
-    width: 85%;
+    margin: 15px 0px 15px  25px;
+    height: 5.5vw;
+    width: 5.5vw;
     
     
 }
@@ -95,8 +95,8 @@ body{
 }
 
 .prd-img-scrn-dis{
-  width: 90%;
-  height: 90%;
+  width: 30vw;
+  height: 30vw;
   
 }
 
@@ -253,6 +253,90 @@ p{
 
 @media (max-width: 952px) {
     .prd{
-        display: block;
+        display: inline-block;
+    }
+
+    .prd-img-scrn-dis{
+        width: 58vw;
+        height: 60vw;
+        margin-top: 10%;
+        
+      }
+
+      .prd-img-multi-pht{
+        margin: 15px 0px 15px  25px;
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .prd-img{
+        width: 100%;
+    }
+    .prd-info{
+        width: 100%;
+    }
+
+    .check-out, .add-crt {
+        display: inline-block;
+        background-color: #353535; /* Button background color */
+        color: #fff; /* Text color */
+        padding: 8px 40px; /* Padding to adjust the button size */
+        border: none;
+        border-radius: 5px; /* Rounded corners for the button */
+        margin: 5px; /* Add margin to separate the buttons */
+        text-decoration: none; 
+        cursor: pointer;/* Remove underline from links */
+    }
+    
+    .shop-item-button{
+        display: inline-block;
+        background-color: #353535; /* Button background color */
+        color: #fff; /* Text color */
+        padding: 8px 47px; /* Padding to adjust the button size */
+        border: none;
+        border-radius: 5px; /* Rounded corners for the button */
+        margin: 5px; /* Add margin to separate the buttons */
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .shop-item-button-1{
+        display: inline-block;
+        background-color: #353535; /* Button background color */
+        color: #fff; /* Text color */
+        padding: 9px 53.5px; /* Padding to adjust the button size */
+        border: none;
+        border-radius: 5px; /* Rounded corners for the button */
+        margin: 5px; /* Add margin to separate the buttons */
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .shop-item-button-2{
+        display: inline-block;
+        background-color: #353535; /* Button background color */
+        color: #fff; /* Text color */
+        padding: 9px 53.5px; /* Padding to adjust the button size */
+        border: none;
+        border-radius: 5px; /* Rounded corners for the button */
+        margin: 5px; /* Add margin to separate the buttons */
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .prd-price h4{
+        font-size: 1.5rem;
+    }
+
+    .prd-dis h5{
+        padding-left: 10%;
+    }
+
+    .prd-info-crt p{
+        line-height: 9px;
+        margin-bottom: 20px
+    }
+
+    .prd-dis ul{
+        padding: 10px 0px 0px 30px;
+        list-style: none;
     }
 }
